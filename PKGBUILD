@@ -1,19 +1,16 @@
 pkgname=gawk
 pkgver=5.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc="GNU version of awk"
 arch=('x86_64')
 url="https://www.gnu.org/software/gawk/"
 license=('GPL-3.0-or-later')
 groups=('base' 'base-devel')
 depends=(
+    'bash'
     'glibc'
-    'gmp'
     'mpfr'
-    'ncurses'
-    'readline'
 )
-options=('!lto')
 source=(https://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.xz)
 sha256sums=(f8c3486509de705192138b00ef2c00bbbdd0e84c30d5c07d23fc73a9dc4cc9cc)
 
